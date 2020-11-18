@@ -1,7 +1,0 @@
----
-username: kitchen
-hostname: localhost
-ssh_key: "/Users/ross/p/ross.crawford/bienert/smallstep-ca/smallstep_ca-formula/.kitchen/docker_id_rsa"
-image_id: e978fee84fde
-container_id: f7a8e83b39c60520019b62bbbba9fbb27b312ea353889f050037fb98137acd5d
-port: 49156
