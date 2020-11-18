@@ -15,7 +15,10 @@ services:
     networks:
     - smallstep_ca_backend
     volumes:
-    - {{ config.data_location }}:/home/step
+    - smallstep_ca:/home/step
 
 networks:
     smallstep_ca_backend:
+
+volumes:
+  smallstep_ca:

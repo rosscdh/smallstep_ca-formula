@@ -2,4 +2,4 @@ smallstep_ca:
   image: smallstep/step-ca:latest
   port: 9443
   location: /opt/smallstep/ca
-  data_location: /opt/smallstep/ca/data
+
