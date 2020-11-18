@@ -1,0 +1,21 @@
+{%- from "smallstep_ca/map.jinja" import config with context %}
+version: '3'
+
+services:
+  # ca-init:
+  #   image: smallstep/step-ca:latest
+  #   command: ["step", "ca", "init"]
+  #   volumes:
+  #   - step:/home/step
+
+  ca:
+    image: {{ config.image }}
+    ports:
+    - {{ config.port }}:443
+    networks:
+    - smallstep_ca_backend
+    volumes:
+    - {{ config.data_location }}:/home/step
+
+networks:
+    smallstep_ca_backend:

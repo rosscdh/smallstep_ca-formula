@@ -1,0 +1,7 @@
+name: smallstep_ca
+os: CentOS
+os_family: RedHat
+version: 0.0.1
+release: 1
+description: smallstep_ca docker-compose
+top_level_dir:  smallstep_ca
